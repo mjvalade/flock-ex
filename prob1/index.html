@@ -2,9 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
-  <body>
-    
+  <body class="body-style">
+    <div class="container">
+      <header>
+        <h1 class="header-style">ToDo List</h1>
+      </header>
+      <!-- <div class="col-lg-6 input-field"> -->
+        <div class="input-group input-field">
+          <input type="text" class="form-control input-todo" id="todo-field" placeholder="New todo item...">
+          <span class="input-group-btn">
+            <button class="btn btn-default submit" type="button">Add</button>
+          </span>
+        </div>
+      <!-- </div> -->
+
+      <ul class="list-group table">
+        <!-- todo table rows appended here -->
+      </ul>
+
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
