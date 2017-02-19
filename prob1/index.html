@@ -21,49 +21,60 @@
         <input type="text" class="input-todo" id="name-field" placeholder="Name...">
         <input type="text" class="input-todo" id="topic-field" placeholder="Topic...">
         <input type="date" class="input-todo" id="date-field" placeholder="Due Date...">
-        <button class="submit-button" type="submit">Add</button>
+        <section class="button-container">
+          <button class="submit-button" type="submit">Add</button>
+          <button class="clear-button" type="submit">Clear</button>
+        </section>
       </form>
     </section>
 
     <table class="table-style">
       <thead>
-        <tr>
+        <tr class="header-row">
           <th class="table-headers">Name</th>
           <th class="table-headers">Topic</th>
           <th class="table-headers">Due Date</th>
           <th class="table-headers">Completed</th>
         </tr>
       </thead>
+
       <tbody>
-        <tr>
+        <tr class="item-row">
+          <td class="todo-items">Plan meals for the week</td>
+          <td class="todo-items">Home</td>
+          <td class="todo-items">2/26/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Grocery shop</td>
+          <td class="todo-items">Home</td>
+          <td class="todo-items">2/27/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Sign up for swim lessons</td>
+          <td class="todo-items">Kids</td>
+          <td class="todo-items">2/29/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Plan St. Paddy's Party</td>
+          <td class="todo-items">Work</td>
+          <td class="todo-items">3/13/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
           <td class="todo-items">Buy Flowers</td>
           <td class="todo-items">Gardening</td>
-          <td class="todo-items">March 20</td>
-          <td class="todo-items"></td>
+          <td class="todo-items">3/20/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
         </tr>
       </tbody>
     </table>
-
-    <!-- <ul class="list-group table">
-      <li class="todo-card">
-        <h1 class="todo-name">Buy flowers</h1>
-        <section class="todo-details">
-          <p class="todo-other">Gardening</p>
-          <p class="todo-other">March 20</p>
-        </section>
-          <button class="completed-button" type="submit">Completed</button>
-      </li>
-
-      <li class="todo-card">
-        <section class="todo-title">
-          <h1 class="todo-name">Plan meals for the week</h1>
-          <input type="checkbox" class="completed">
-        </section>
-        <p class="todo-topic">Gardening</p>
-        <p class="todo-date">March 20</p>
-      </li>
-
-    </ul> -->
 
     <script src="scripts.js"></script>
   </body>
