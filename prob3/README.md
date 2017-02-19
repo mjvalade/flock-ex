@@ -15,4 +15,4 @@ Calc.divide(20,10) // returns 2
 Calc.divide(null,10) // returns null
 
 ##### Notes
-Using the prototype method for creating a JS object I created a Calculator and then four methods on the initial object.
+Using the prototype method for creating a JS object I created a Calculator and then four methods on the initial object. I also included 7 unit tests to check that the functions are working.
