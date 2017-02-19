@@ -4,28 +4,28 @@ function Calculator(a,b) {
 }
 
 Calculator.prototype.add = function(){
-  let sum = (this.a + this.b);
-  console.log('add/sum:', sum);
+  console.log(this.a + this.b);
+  return(this.a + this.b);
 };
 
 Calculator.prototype.subtract = function(){
-  let sum = (this.a - this.b);
-  console.log('subtract/sum:', sum);
+  console.log(this.a - this.b);
+  return(this.a - this.b);
 };
 
 Calculator.prototype.multiply = function(){
-  let sum = (this.a * this.b);
-  console.log('multiply/sum:', sum);
+  console.log(this.a * this.b);
+  return(this.a * this.b);
 };
 
 Calculator.prototype.divide = function(){
-  let sum = (this.a / this.b);
-  console.log('divide/sum:', sum);
+  console.log(this.a / this.b);
+  return(this.a / this.b);
 };
 
 module.exports = Calculator;
 
-// In terminal run > node prob3/calc.js
+// In terminal run > node calc.js
 let calc = new Calculator(6,3);
 calc.add();
 calc.subtract();
