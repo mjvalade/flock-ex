@@ -1,5 +1,12 @@
 .body-style {
-  background-color: #1B5A7A;
+  background-color: #07689F;
+  font-family: 'Arimo', sans-serif;
+  padding-bottom: 20px;
+}
+
+.top-header {
+  background: #8BC34A;
+  padding: 10px 0 20px 0;
 }
 
 header {
@@ -8,21 +15,123 @@ header {
 }
 
 .header-style {
-  color: #A6ED8E;
-  font-size: 60px;
+  color: #07689F;
+  font-size: 5em;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
 }
 
-.input-field {
-  margin-top: 40px;
-  margin-bottom: 20px;
+@media screen and (max-width: 575px) {
+  .header-style {
+    font-size: 4em;
+  }
 }
 
-.input-group {
+.input-form {
   display: flex;
-  justify-content: center;
-  /*width: 75%;*/
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.table {
-  margin-top: 100px;
+.input-todo {
+  border: 2px solid #07689F;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  .input-todo {
+    width: 75%;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.submit-button {
+  background: #07689F;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1em;
+  height: 30px;
+  width: 90px;
+  margin-right: 5px;
+}
+
+.submit-button:hover {
+  background: white;
+  border: 2px solid #07689F;
+  color: #07689F;
+}
+
+.clear-button {
+  background: white;
+  border: 2px solid #07689F;
+  border-radius: 20px;
+  color: #07689F;
+  font-size: 1em;
+  height: 30px;
+  width: 90px;
+  margin-left: 5px;
+
+}
+
+.clear-button:hover {
+  background: #07689F;
+  border: 2px solid #07689F;
+  color: white;
+}
+
+.table-style {
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 85%;
+}
+
+@media screen and (max-width: 575px) {
+  .table-style {
+    width: 75%;
+  }
+  thead {
+    display: none;
+  }
+}
+
+.table-headers {
+  background: #A2D5F2;
+  color: #07689F;
+  font-size: 2em;
+  padding: 15px;
+  width: 150px;
+}
+
+.item-row {
+  border-top: 1px solid #A2D5F2;
+}
+
+.todo-items {
+  color: #07689F;
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .item-row {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 5px 0;
+  }
+  .todo-items {
+    padding: 0 0 0 10px;
+  }
 }

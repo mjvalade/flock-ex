@@ -3,29 +3,78 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ToDo List</title>
+    <title>Get It Done</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body class="body-style">
-    <div class="container">
+    <section class="top-header">
       <header>
-        <h1 class="header-style">ToDo List</h1>
+        <h1 class="header-style">Get It Done</h1>
       </header>
-        <div class="input-group input-field">
-          <input type="text" class="form-control input-todo" id="todo-field" placeholder="New todo item...">
-          <span class="input-group-btn">
-            <button class="btn btn-default submit" type="button">Add</button>
-          </span>
-        </div>
 
-      <ul class="list-group table">
-        <!-- todo table rows appended here -->
-      </ul>
+      <form class="input-form">
+        <input type="text" class="input-todo" id="name-field" placeholder="Name...">
+        <input type="text" class="input-todo" id="topic-field" placeholder="Topic...">
+        <input type="date" class="input-todo" id="date-field" placeholder="Due Date...">
+        <section class="button-container">
+          <button class="submit-button" type="submit">Add</button>
+          <button class="clear-button" type="submit">Clear</button>
+        </section>
+      </form>
+    </section>
 
-    </div>
+    <table class="table-style">
+      <thead>
+        <tr class="header-row">
+          <th class="table-headers">Name</th>
+          <th class="table-headers">Topic</th>
+          <th class="table-headers">Due Date</th>
+          <th class="table-headers">Completed</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="item-row">
+          <td class="todo-items">Plan meals for the week</td>
+          <td class="todo-items">Home</td>
+          <td class="todo-items">2/26/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Grocery shop</td>
+          <td class="todo-items">Home</td>
+          <td class="todo-items">2/27/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Sign up for swim lessons</td>
+          <td class="todo-items">Kids</td>
+          <td class="todo-items">2/29/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Plan St. Paddy's Party</td>
+          <td class="todo-items">Work</td>
+          <td class="todo-items">3/13/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+
+        <tr class="item-row">
+          <td class="todo-items">Buy Flowers</td>
+          <td class="todo-items">Gardening</td>
+          <td class="todo-items">3/20/2017</td>
+          <td class="todo-items"><input type="checkbox" class="checkbox"></td>
+        </tr>
+      </tbody>
+    </table>
 
     <script src="scripts.js"></script>
   </body>
