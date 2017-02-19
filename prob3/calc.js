@@ -23,6 +23,8 @@ Calculator.prototype.divide = function(){
   console.log('divide/sum:', sum);
 };
 
+module.exports = Calculator;
+
 // In terminal run > node prob3/calc.js
 let calc = new Calculator(6,3);
 calc.add();
