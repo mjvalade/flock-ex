@@ -4,7 +4,7 @@ function Calculator(a, b) {
 }
 
 Calculator.prototype.add = function(){
-  return (this.a + this.b);
+  return total = parseInt(this.a + this.b);
 };
 
 Calculator.prototype.subtract = function(){

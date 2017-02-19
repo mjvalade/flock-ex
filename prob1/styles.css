@@ -1,28 +1,138 @@
+/*http://colorhunt.co/c/64640*/
+
 .body-style {
-  background-color: #1B5A7A;
+  background-color: #1AA59A;
+  font-family: 'Arimo', sans-serif;
+}
+
+.top-header {
+  background: #F3FFB9;
+  border-bottom: 5px solid #1B5A7A;
+  padding-bottom: 20px;
 }
 
 header {
   display: flex;
   text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .header-style {
-  color: #A6ED8E;
+  color: #1B5A7A;
   font-size: 60px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
 }
 
-.input-field {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.input-group {
+.input-form {
   display: flex;
-  justify-content: center;
-  /*width: 75%;*/
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.table {
-  margin-top: 100px;
+.input-todo {
+  border: 2px solid #1B5A7A;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: 50%;
 }
+
+.submit-button {
+  background: #1B5A7A;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1em;
+  height: 30px;
+  width: 90px;
+}
+
+.submit-button:hover {
+  background: white;
+  border: 2px solid #1B5A7A;
+  color: #1B5A7A;
+}
+
+.table-style {
+  /*display: flex;*/
+  background-color: #F3FFB9;
+  border-radius: 5px;
+  margin: auto;
+  padding: 15px;
+}
+
+.table-headers {
+  border-bottom: 1px solid #FF5722;
+  color: #1B5A7A;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  width: 150px;
+}
+
+tbody {
+  /*display: flex;*/
+}
+
+.todo-items {
+  color: #1B5A7A;
+
+}
+
+/*Todo Cards*/
+/*
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 50px 0 0;
+}
+
+.todo-card {
+  background-color: #F3FFB9;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 350px;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.todo-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.todo-name {
+  margin-top: 0;
+}
+
+.todo-other {
+  font-size: 20px;
+}
+
+.todo-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.completed-button {
+  background: #1B5A7A;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1em;
+  height: 30px;
+  width: 90px;
+}
+
+.completed-button:hover {
+  background: white;
+  border: 2px solid #1B5A7A;
+  color: #1B5A7A;
+}*/
